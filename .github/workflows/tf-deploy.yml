@@ -5,7 +5,6 @@ on:
       - main
     paths:
       - 'src/terraform/**'
-      - 'src/dotnet/**'
       - '.github/workflows/**'
 
 env:
@@ -71,7 +70,7 @@ jobs:
             -backend-config="container_name=$BACKEND_STORAGE_CONTAINER_NAME" \
             -backend-config="key=$TF_BACKEND_KEY"
 
-    # Run a Terraform apply
+      # Run a Terraform apply
       - name: Terraform apply
         id: apply
         working-directory: ${{ env.TERRAFORM_WORKING_DIRECTORY }}
