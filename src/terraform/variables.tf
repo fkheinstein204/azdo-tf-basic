@@ -1,12 +1,12 @@
 variable "application_name" {
   type    = string
-  default = "oidc"
+  default = "azdo"
 }
 
 variable "business_divsion" {
   description = "Business Division in the large organization this Infrastructure belongs"
   type        = string
-  default     = "sap"
+  default     = "hfz"
 }
 
 variable "environment" {
